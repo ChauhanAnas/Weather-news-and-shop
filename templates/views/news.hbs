@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>LiveFlicks</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="news">
+        <div class="search">
+            <form>
+                <input type="text" name="topic" id="keyword" placeholder="Enter the topic or keyword" autocomplete="off">
+                <input type="submit" name="submit" id="submitbtn" value="Go">
+            </form>
+        </div>
+        <div class="cards" id="cards">
+           {{!-- <div id="card1">
+                <div class="card1-img">
+                    <img id="news-img" src="https://images.bhaskarassets.com/thumb/1000x1000/web2images/521/2024/08/03/44412815101111111110191010101010101001010101011011_1722698294.jpg" alt="">
+                </div>
+                <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid blanditiis amet pariatur consequatur voluptatem quidem consectetur temporibus!</p>
+                <button id="read">Read more</button>
+            </div> --}}
+        </div>
+    </div>
+
+    <template id="ott">
+        <div id="card1">
+                <div class="card1-img">
+                    <img id="news-img" src="https://images.bhaskarassets.com/thumb/1000x1000/web2images/521/2024/08/03/44412815101111111110191010101010101001010101011011_1722698294.jpg" alt="">
+                </div>
+                <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid blanditiis amet pariatur consequatur voluptatem quidem consectetur temporibus!</p>
+                <button id="read">Read more</button>
+            </div>
+    </template>
+
+
+    <script src="js/news.js"></script>
+</body>
+</html>

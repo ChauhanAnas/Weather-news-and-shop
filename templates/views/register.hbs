@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>LiveFlicks</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="index">
+        <form action="/register" method="POST">
+            <input type="text" placeholder="Enter full name" name="name" autocomplete="off">
+            <input type="email" placeholder="Enter Email" name="email" autocomplete="off">
+            <input type="tel" placeholder="Enter Phone Number" name="phone" autocomplete="off">
+            <input type="number" placeholder="Enter age" name="age" autocomplete="off">
+            <input type="password" placeholder="Enter password" name="password" autocomplete="off">
+            <input type="password" placeholder="confirm password" name="cpassword" autocomplete="off">
+            <input type="submit" name="submit" value="Register">
+            <p>Already have account? <a href="/login">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

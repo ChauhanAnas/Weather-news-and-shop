@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>LiveFlicks</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="movies">
+        <div class="search">
+            <form>
+                <input type="text" name="movieType" id="movieType" placeholder="Enter the type of the movies" autocomplete="off">
+                <input type="submit" name="submit" id="submitbtn" value="Go">
+            </form>
+        </div>
+        <div class="movie_cards" id="movies_cards">
+
+        </div>
+    </div>
+
+
+    <template id="show">
+            <div id="movie_card1">
+                <div class="img">
+                    <img id="p-img" src="https://m.media-amazon.com/images/I/6124I6d1jnL._AC_UY654_FMwebp_QL65_.jpg" alt="movie_image">
+                </div>
+                <div class="description">
+                    <p id="title">Unlocked Android Phone S23 Ultra Cellphone 13 Smart Mobile 8-core 8GB+256GB Cell 6.8-inch HD Screen 50MP+24MP Camera 6800 mAh Extra Large Battery 4G Dual SIM (Titanium Gray)</p>
+                    <h6>Price <span id="price">$142</span></h6>
+                    <h6>Rating <span id="rating">5 Star</span></h6>
+                    <h6>Delivery <span id="delivery">FREE delivery Thu, Aug 8</span></h6>
+                    <button id="shop">View</button>
+                </div>
+            </div>
+    </template>
+    
+    <script src="js/movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>LiveFlicks</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="weather">
+        <div class="search">
+            <form>
+                <input type="text" name="city" id="cityName" placeholder="Enter City name" autocomplete="off">
+                <input type="submit" name="submit" id="submitbtn" value="Go">
+            </form>
+        </div>
+    <div class="weather_card">
+        <div class="card">
+            <div class="temp">
+                <p id="city">--</p>
+                <div class="temp_cond">
+                    <i class="c-icon fa-solid fa-cloud-sun"></i>
+                    <h1 id="temp_c">--</h1>
+                    <p id="condition">--</p>
+                </div>
+                <div class="date">
+                    <p id="lass">--</p>
+                    <p id="day1">--</p>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="carts">
+                    <div class="cart1">
+                        <p>Wind</p>
+                        <span id="wind">--</span>
+                    </div>
+                    <div class="cart2">
+                        <p>Humidity</p>
+                        <span id="humidity">--</span>
+                    </div>
+                    <div class="cart3">
+                        <p>Real Feel</p>
+                        <span id="feel">--</span>
+                    </div>
+                    <div class="cart4">
+                        <p>UV Index</p>
+                        <span id="uv">--</span>
+                    </div>
+                    <div class="cart5">
+                        <p>Pressure</p>
+                        <span id="pressure">--</span>
+                    </div>
+                    <div class="cart6">
+                        <p>Day / Night</p>
+                        <span id="day">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/weather.js"></script>
+</body>
+</html>
